@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <AnchorPane prefHeight="400.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+
+            <Label layoutX="19.0" layoutY="73.0" prefHeight="55.0" prefWidth="407.0" text="Welcome to StrengthProgress" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="409.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="123.0" prefHeight="55.0" prefWidth="311.0" text="Everything you should know about the progress &#10;in your strength results">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button fx:id="signUpButton" layoutX="31.0" layoutY="191.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #8c8c8c;" text="Sign Up" textFill="#f5f5f5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <TextField fx:id="identityText" layoutX="478.0" layoutY="88.0" prefHeight="25.0" prefWidth="285.0" promptText="username" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="88.0" />
+            <PasswordField fx:id="passwordText" layoutX="478.0" layoutY="128.0" opacity="0.8" prefHeight="25.0" prefWidth="285.0" promptText="password" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="37.0" />
+            <Button fx:id="signInButton" layoutX="478.0" layoutY="191.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="285.0" style="-fx-background-color: #8c8c8c;" text="Sign In" textFill="#f5f5f5" AnchorPane.rightAnchor="37.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Line endX="-8.0" endY="134.0" layoutX="439.0" layoutY="128.0" startX="-8.0" startY="-96.0" />
+    </AnchorPane>
+</VBox>

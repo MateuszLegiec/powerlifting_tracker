@@ -1,0 +1,27 @@
+import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Application extends javafx.application.Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/Scene/LoginScene.fxml"));
+        primaryStage.setTitle("Strength Progress");
+
+        primaryStage.setScene(new Scene(root,800,300));
+        primaryStage.setAlwaysOnTop(false);
+        primaryStage.setResizable(false);
+        primaryStage.setOnCloseRequest(e -> Platform.exit());
+        primaryStage.show();
+
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+}
